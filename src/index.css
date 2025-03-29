@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add responsive design classes */
+body {
+  @apply bg-gray-50;
+}
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+/* Add media queries for different screen sizes */
+@media (max-width: 768px) {
+  .container {
+    @apply max-w-md;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    @apply max-w-sm;
+  }
+}
